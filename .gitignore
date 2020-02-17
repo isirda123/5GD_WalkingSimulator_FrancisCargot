@@ -1,8 +1,8 @@
-**/[Ll]ibrary/
-**/[Tt]emp/
-**/[Oo]bj/
-**/[Bb]uild/
-**/[Bb]uilds/
+Francis Cargot/[Ll]ibrary/
+Francis Cargot/[Tt]emp/
+Francis Cargot/[Oo]bj/
+Francis Cargot/[Bb]uild/
+Francis Cargot/[Bb]uilds/
 *.stackdump
 
 # Never ignore Asset meta data
