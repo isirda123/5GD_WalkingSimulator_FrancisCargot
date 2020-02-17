@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class MouvementAvatar : MonoBehaviour
 {
-
+    Rigidbody rb;
     public float mouvementSpeed;
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = this.GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z + mouvementSpeed * Time.deltaTime);
+        rb.MovePosition(new Vector3 (this.transform.position.x, this.transform.position.y, this.transform.position.z + 1 * mouvementSpeed * Time.deltaTime));
     }
 }
