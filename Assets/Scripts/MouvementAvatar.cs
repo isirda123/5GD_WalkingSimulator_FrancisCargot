@@ -1,15 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 
 public class MouvementAvatar : MonoBehaviour
 {
     Rigidbody rb;
+
+    [Header("Post Process")]
+    [SerializeField] PostProcessVolume processVolume;
+    [SerializeField] PostProcessProfile blurryBase, blurryRange;
+
+    [Header("Physics Material")]
+    [SerializeField] PhysicMaterial ice;
+    [SerializeField] PhysicMaterial snailPhysics;
+
+    [Header ("Other")]
     [SerializeField] float mouvementSpeed;
     [SerializeField] float rotationSpeed;
     [SerializeField] Vector3 gravityOrientation;
     [SerializeField] float powerOfGravity;
     bool onfloor = false;
+    bool modeZoom = false;
+    bool sliding = false;
 
     // Start is called before the first frame update
     void Start()
@@ -20,9 +33,12 @@ public class MouvementAvatar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+
         float moving = 0;
         float rotate = 0;
 
+        #region InputMvt
         if (Input.GetKey(KeyCode.Z))
         {
             print("move");
@@ -39,8 +55,41 @@ public class MouvementAvatar : MonoBehaviour
             print("rotate+");
             rotate += rotationSpeed;
         }
+        #endregion
 
-        Moving(moving, rotate);
+        #region ModeCarapace
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            modeZoom = true;
+            processVolume.profile = blurryRange;
+
+
+        }
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            modeZoom = false;
+            processVolume.profile = blurryBase;
+            GetComponent<MeshCollider>().material = snailPhysics;
+        }
+        #endregion
+
+
+
+        if (modeZoom == false)
+        {
+            
+            Moving(moving, rotate);
+        }
+        else
+        {
+            print("Zoom In");
+            if (moving > 0)
+            {
+                print("Slide");
+                sliding = true;
+                GetComponent<MeshCollider>().material = ice;
+            }
+        }
 
         
     }
@@ -63,10 +112,11 @@ public class MouvementAvatar : MonoBehaviour
     void CheckForGravity()
     {
         RaycastHit hit;
-
-        if (Physics.Raycast (transform.position, -transform.up, out hit, transform.localScale.y*0.5f + 10f))
+        if (sliding == false)
         {
-            
+            if (Physics.Raycast(transform.position, -transform.up, out hit, transform.localScale.y * 0.5f + 10f))
+            {
+
                 print("oui");
                 Debug.DrawRay(transform.position, -transform.up * 10f, Color.yellow);
                 rb.useGravity = false;
@@ -81,10 +131,14 @@ public class MouvementAvatar : MonoBehaviour
                     rb.AddRelativeForce(0, gravityOrientation.y * powerOfGravity, 0);
 
                 }
+            }
+            else
+            {
+            }
         }
         else
         {
-            //rb.useGravity = true;
+            rb.AddForce(Physics.gravity);
         }
     }
 
