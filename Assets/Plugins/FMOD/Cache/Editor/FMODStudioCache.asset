@@ -1,5 +1,28 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9156134829273543672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/TestDistanceParameter
+  m_EditorClassIdentifier: 
+  Path: event:/TestDistanceParameter
+  guid: a3c2ccc434daf8408497afc2000ba53a
+  Banks:
+  - {fileID: 5331252926471787649}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 8000
 --- !u!114 &-5324489946070222684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17,7 +40,7 @@ MonoBehaviour:
   lastModified: 637176368104277104
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &-3830107237092174523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32,12 +55,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: FMOD/FrancisCargot/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637176368104307384
+  lastModified: 637176408114455633
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 688
+    Value: 796
   Exists: 1
+--- !u!114 &-2319141183848768428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637176407072507611
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52,12 +93,67 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -3830107237092174523}
-  - {fileID: -5324489946070222684}
-  EditorEvents: []
+  - {fileID: 5331252926471787649}
+  EditorEvents:
+  - {fileID: -9156134829273543672}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -5324489946070222684}
+  - {fileID: 5331252926471787649}
   StringsBanks:
   - {fileID: -3830107237092174523}
-  stringsBankWriteTime: 637176368104307384
+  stringsBankWriteTime: 637176408114455633
   cacheVersion: 3
+--- !u!114 &4340420968196897188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637176404345778104
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &5331252926471787649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637176408114425706
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &7226020748879902105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637176405070775965
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
