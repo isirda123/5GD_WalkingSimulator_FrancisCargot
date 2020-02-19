@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class OrientationCamera : MonoBehaviour
 {
-    Vector2 mouseLastPos;
-    Vector2 mousePos;
     [SerializeField] float sensibilityOfMouth;
     [SerializeField] float xRotationMax;
     [SerializeField] float yRotationMax;
+
+    float rotX, rotY;
     // Start is called before the first frame update
     void Start()
     {
-        mouseLastPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     // Update is called once per frame
@@ -23,12 +24,46 @@ public class OrientationCamera : MonoBehaviour
 
     void LookAtTheMouse()
     {
-        mousePos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
-        Vector2 mouvementOfMouse = mousePos - mouseLastPos;
-        this.transform.Rotate(-mouvementOfMouse.y * sensibilityOfMouth, mouvementOfMouse.x * sensibilityOfMouth,0);
-        this.transform.rotation = Quaternion.Euler(Mathf.Clamp(this.transform.rotation.eulerAngles.x, -xRotationMax, xRotationMax), 
-            Mathf.Clamp(this.transform.rotation.eulerAngles.y, -yRotationMax, yRotationMax), this.transform.rotation.eulerAngles.z);
+        
+        rotX += -Input.GetAxis("Mouse Y") * sensibilityOfMouth;
+        rotY += Input.GetAxis("Mouse X") * sensibilityOfMouth;
+        rotX = Mathf.Clamp(rotX, -xRotationMax, xRotationMax);
+        rotY = Mathf.Clamp(rotY, -yRotationMax, yRotationMax);
 
-        mouseLastPos = mousePos;
+        transform.localRotation = Quaternion.Euler(rotX, rotY, 0);
+        //CheckForRotationMax();
     }
+
+    #region Don't look at this
+
+
+    void CheckForRotationMax()
+    {
+
+        if (transform.localRotation.eulerAngles.x > xRotationMax)
+        {
+            print("0");
+            transform.Rotate(transform.localRotation.eulerAngles.x - xRotationMax, 0, 0);
+        }
+
+        if (transform.localRotation.eulerAngles.x < -xRotationMax)
+        {
+            print("0");
+            transform.Rotate(-xRotationMax - transform.localRotation.eulerAngles.x, 0, 0);
+        }
+
+        if (transform.localRotation.eulerAngles.y > yRotationMax)
+        {
+            print("0");
+            transform.Rotate(0, transform.localRotation.eulerAngles.x - xRotationMax, 0);
+        }
+
+        if (transform.localRotation.eulerAngles.y < -yRotationMax)
+        {
+            print("0");
+            transform.Rotate(0, -yRotationMax - transform.localRotation.eulerAngles.y, 0);
+        }
+
+    }
+    #endregion
 }
