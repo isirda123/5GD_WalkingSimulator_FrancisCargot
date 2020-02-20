@@ -29,6 +29,7 @@ public class MouvementAvatar : MonoBehaviour
     bool onfloor = false;
     bool modeZoom = false;
     bool sliding = false;
+    [SerializeField] bool onIsFeet = false;
 
     // Start is called before the first frame update
     void Start()
@@ -75,8 +76,6 @@ public class MouvementAvatar : MonoBehaviour
 
 
         #endregion
-
-
 
 
         #region InputMvt
@@ -187,9 +186,9 @@ public class MouvementAvatar : MonoBehaviour
             }*/
 
             
-            if (Physics.Raycast(transform.position, -transform.up, out hit, transform.localScale.y * 0.5f + 10f))
+            if (Physics.Raycast(transform.position, -transform.up, out hit, transform.localScale.y * 0.5f + 5f))
             {
-
+                onIsFeet = true;
                 Debug.DrawRay(transform.position, -transform.up * 10f, Color.yellow);
                 rb.useGravity = false;
                 gravityOrientation = hit.normal.normalized;
@@ -204,6 +203,10 @@ public class MouvementAvatar : MonoBehaviour
 
                 }
             }
+            else
+            {
+                onIsFeet = false;
+            }
         }
         else
         {
@@ -214,6 +217,10 @@ public class MouvementAvatar : MonoBehaviour
     private void OnCollisionStay(Collision collision)
     {
         onfloor = true;
+        if (onIsFeet == false && rb.velocity.magnitude < 0.2f)
+        {
+            print("Pute");
+        }
     }
     private void OnCollisionExit(Collision collision)
     {
