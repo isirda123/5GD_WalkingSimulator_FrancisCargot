@@ -10,13 +10,19 @@ public class MouvementAvatar : MonoBehaviour
     [Header("Post Process")]
     [SerializeField] PostProcessVolume processVolume;
     [SerializeField] PostProcessProfile blurryBase, blurryRange;
+    [SerializeField] float blurringTime;
 
     [Header("Physics Material")]
     [SerializeField] PhysicMaterial ice;
     [SerializeField] PhysicMaterial snailPhysics;
 
+    [Header("WayPoint")]
+    [SerializeField] KeyCode[] inputWaypoint;
+    [SerializeField] Vector3[] waypointPosition;
+
     [Header ("Other")]
     [SerializeField] float mouvementSpeed;
+    float mouvementSpeedBase = 0;
     [SerializeField] float rotationSpeed;
     [SerializeField] Vector3 gravityOrientation;
     [SerializeField] float powerOfGravity;
@@ -28,6 +34,7 @@ public class MouvementAvatar : MonoBehaviour
     void Start()
     {
         rb = this.GetComponent<Rigidbody>();
+        mouvementSpeedBase = mouvementSpeed;
     }
 
     // Update is called once per frame
@@ -38,7 +45,43 @@ public class MouvementAvatar : MonoBehaviour
         float moving = 0;
         float rotate = 0;
 
+
+        
+
+
+        #region Cheat Input
+
+        /// Speed
+        if (Input.GetKeyDown(KeyCode.KeypadPlus))
+        {
+            mouvementSpeed += mouvementSpeedBase;
+        }
+        if (Input.GetKeyUp(KeyCode.KeypadMinus) && mouvementSpeed > mouvementSpeedBase)
+        {
+            mouvementSpeed -= mouvementSpeedBase;
+        }
+
+        /// Waypoint
+        for (int i = 0; i < inputWaypoint.Length; i++)
+        {
+            if (Input.GetKeyDown(inputWaypoint[i]))
+            {
+                transform.position = waypointPosition[i];
+            }
+        }
+
+
+
+
+
+        #endregion
+
+
+
+
         #region InputMvt
+
+
         if (Input.GetKey(KeyCode.Z))
         {
             print("move");
@@ -57,23 +100,25 @@ public class MouvementAvatar : MonoBehaviour
         }
         #endregion
 
-        #region ModeCarapace
+
+
+        #region Input ModeCarapace
         if (Input.GetKeyDown(KeyCode.Space))
         {
             modeZoom = true;
-            processVolume.profile = blurryRange;
 
 
         }
         if (Input.GetKeyUp(KeyCode.Space))
         {
             modeZoom = false;
-            processVolume.profile = blurryBase;
-            GetComponent<MeshCollider>().material = snailPhysics;
+            
+            GetComponent<MeshCollider>().enabled = true;
+            GetComponent<SphereCollider>().enabled = false;
         }
         #endregion
 
-
+        
 
         if (modeZoom == false)
         {
@@ -87,7 +132,8 @@ public class MouvementAvatar : MonoBehaviour
             {
                 print("Slide");
                 sliding = true;
-                GetComponent<MeshCollider>().material = ice;
+                GetComponent<MeshCollider>().enabled = false;
+                GetComponent<SphereCollider>().enabled = true;
             }
         }
 
@@ -112,12 +158,38 @@ public class MouvementAvatar : MonoBehaviour
     void CheckForGravity()
     {
         RaycastHit hit;
+        
         if (sliding == false)
         {
+            /*RaycastHit[] allHit = Physics.SphereCastAll(transform.position, 10f, -transform.up, 3f);
+            print(allHit.Length);
+            if (allHit.Length != 0)
+            {
+                rb.useGravity = false;
+                Vector3 averageNormal = Vector3.zero;
+                for (int i =0; i < allHit.Length; i++)
+                {
+                    averageNormal += allHit[i].normal;
+                }
+                averageNormal /= allHit.Length;
+                gravityOrientation = averageNormal;
+
+                if (gravityOrientation.y > 0)
+                {
+                    rb.AddRelativeForce(0, -gravityOrientation.y * powerOfGravity, 0);
+
+                }
+                else
+                {
+                    rb.AddRelativeForce(0, gravityOrientation.y * powerOfGravity, 0);
+
+                }
+            }*/
+
+            
             if (Physics.Raycast(transform.position, -transform.up, out hit, transform.localScale.y * 0.5f + 10f))
             {
 
-                print("oui");
                 Debug.DrawRay(transform.position, -transform.up * 10f, Color.yellow);
                 rb.useGravity = false;
                 gravityOrientation = hit.normal.normalized;
@@ -131,9 +203,6 @@ public class MouvementAvatar : MonoBehaviour
                     rb.AddRelativeForce(0, gravityOrientation.y * powerOfGravity, 0);
 
                 }
-            }
-            else
-            {
             }
         }
         else
