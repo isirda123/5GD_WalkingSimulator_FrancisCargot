@@ -33,11 +33,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _GradientTex:
-        m_Texture: {fileID: 2800000, guid: 7e177bfc0bd15734bb6123a25bd6b7c6, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Normals:
-        m_Texture: {fileID: 2800000, guid: 3a41e7c7976846a47a62be3520f418ed, type: 3}
+        m_Texture: {fileID: 2800000, guid: c3fc283aa0eb2ac4dbf2e234343bb6a5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Reflection:
@@ -63,19 +63,19 @@ Material:
     m_Floats:
     - _ChromaticAberration: 0.3
     - _Cutoff: 0.5
-    - _Depth: 13
+    - _Depth: 15.4
     - _Depthdarkness: 0
     - _ENABLE_GRADIENT: 0
     - _ENABLE_SHADOWS: 0
     - _ENABLE_VC: 0
     - _EdgeFade: 0.2448298
     - _FoamDistortion: 0.45
-    - _FoamOpacity: 0.1
+    - _FoamOpacity: 0.074
     - _FoamSize: 0
     - _FoamSpeed: 0.1
-    - _FoamTiling: 0.15
+    - _FoamTiling: 0.8
     - _Fresnelexponent: 47.21
-    - _Glossiness: 0.804
+    - _Glossiness: 0.711
     - _Gradient: 0
     - _HighlightPanning: 0
     - _IntersectionDistortion: 0.1
@@ -86,8 +86,8 @@ Material:
     - _MaskClipValue: 0.5
     - _Metallicness: 0.1
     - _NORMAL_MAP: 0
-    - _NormalStrength: 0.341
-    - _NormalTiling: 0.39999992
+    - _NormalStrength: 0.308
+    - _NormalTiling: 0.2
     - _Pixelate: 0
     - _Pixelize: 0
     - _RT_REFRACTION: 0
@@ -97,9 +97,9 @@ Material:
     - _ReflectionStrength: 0
     - _RefractionAmount: 0.0247
     - _RimDistance: 1.91
-    - _RimDistortion: 0.139
-    - _RimSize: 4.6
-    - _Rimfalloff: 2.7
+    - _RimDistortion: 0
+    - _RimSize: 0
+    - _Rimfalloff: 0.1
     - _Rimtiling: 0.5
     - _SECONDARY_WAVES: 1
     - _SurfaceHighlight: 0
@@ -110,23 +110,23 @@ Material:
     - _TessPhongStrength: 0.5
     - _Tessellation: 20
     - _Tiling: 2.9489994
-    - _Transparency: 0.941
+    - _Transparency: 1
     - _USE_VC_INTERSECTION: 0
     - _Unlit: 0
     - _UseIntersectionFoam: 1
     - _UseIntersectionHighlight: 1
     - _WaveFoam: 0
-    - _WaveHeight: 0.011
-    - _WaveSize: 0.1
+    - _WaveHeight: 0
+    - _WaveSize: 0.2
     - _Wavefoam: 1
     - _Wavesspeed: 0.75
     - _Wavesstrength: 0.268
-    - _Wavetint: -0.077
+    - _Wavetint: -0.293
     - _Worldspacetiling: 1
     - __dirty: 0
     m_Colors:
-    - _FresnelColor: {r: 0.5, g: 0.8551724, b: 1, a: 0.666}
+    - _FresnelColor: {r: 0.5849056, g: 0.3760535, b: 0.30072978, a: 0.76862746}
     - _RimColor: {r: 1, g: 1, b: 1, a: 0.453}
-    - _WaterColor: {r: 0.11760823, g: 0.63488847, b: 1, a: 0}
-    - _WaterShallowColor: {r: 0.4190787, g: 1, b: 0.8798174, a: 1}
+    - _WaterColor: {r: 0.3018868, g: 0.13424972, b: 0.081167676, a: 0}
+    - _WaterShallowColor: {r: 0.44099998, g: 0.20045453, b: 0.11454544, a: 1}
     - _WaveDirection: {r: 1, g: 0, b: 0, a: 0}
