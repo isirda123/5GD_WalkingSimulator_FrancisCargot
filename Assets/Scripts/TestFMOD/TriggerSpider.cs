@@ -4,15 +4,44 @@ using UnityEngine;
 
 public class TriggerSpider : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private bool isActivated;
+
+    public FlySpiderWeb flySpiderWeb;
+    public FMODUnity.StudioEventEmitter[] events;
+
+    private void OnTriggerStay(Collider other)
     {
-        
+        if (other.gameObject.tag == "Player")
+        {
+            if (!isActivated)
+            {
+                flySpiderWeb.canFly = true;
+
+                for (int i = 0; i < events.Length; i++)
+                {
+                    events[i].Play();
+                }
+            }
+
+            isActivated = true;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerExit(Collider other)
     {
-        
+        if (other.gameObject.tag == "Player")
+        {
+            if (isActivated)
+            {
+                flySpiderWeb.canFly = false;
+
+                for (int i = 0; i < events.Length; i++)
+                {
+                    events[i].Stop();
+                }
+            }
+
+            isActivated = false;
+        }
     }
 }
