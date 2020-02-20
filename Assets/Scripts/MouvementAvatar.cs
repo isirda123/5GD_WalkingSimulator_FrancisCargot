@@ -27,8 +27,10 @@ public class MouvementAvatar : MonoBehaviour
     [SerializeField] Vector3 gravityOrientation;
     [SerializeField] float powerOfGravity;
     bool onfloor = false;
-    bool modeZoom = false;
-    bool sliding = false;
+    [SerializeField] bool modeZoom = false;
+    [SerializeField] bool sliding = false;
+    [SerializeField] bool onIsFeet = false;
+    [SerializeField] float jumpPower;
 
     // Start is called before the first frame update
     void Start()
@@ -61,6 +63,14 @@ public class MouvementAvatar : MonoBehaviour
             mouvementSpeed -= mouvementSpeedBase;
         }
 
+
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            sliding = true;
+            onIsFeet = false;
+            StartCoroutine(JumpAndRecenter());
+        }
+
         /// Waypoint
         for (int i = 0; i < inputWaypoint.Length; i++)
         {
@@ -75,8 +85,6 @@ public class MouvementAvatar : MonoBehaviour
 
 
         #endregion
-
-
 
 
         #region InputMvt
@@ -112,7 +120,6 @@ public class MouvementAvatar : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Space))
         {
             modeZoom = false;
-            
             GetComponent<MeshCollider>().enabled = true;
             GetComponent<SphereCollider>().enabled = false;
         }
@@ -122,8 +129,8 @@ public class MouvementAvatar : MonoBehaviour
 
         if (modeZoom == false)
         {
-            
-            Moving(moving, rotate);
+            if (onIsFeet == true)
+                Moving(moving, rotate);
         }
         else
         {
@@ -137,7 +144,15 @@ public class MouvementAvatar : MonoBehaviour
             }
         }
 
-        
+
+
+        if (sliding == true && rb.velocity.magnitude < 0.001f && GetComponent<MeshCollider>().enabled == true)
+        {
+            print("recentrage");
+            sliding = false;
+
+        }
+
     }
 
     private void FixedUpdate()
@@ -161,6 +176,8 @@ public class MouvementAvatar : MonoBehaviour
         
         if (sliding == false)
         {
+
+            #region SphereCast
             /*RaycastHit[] allHit = Physics.SphereCastAll(transform.position, 10f, -transform.up, 3f);
             print(allHit.Length);
             if (allHit.Length != 0)
@@ -185,12 +202,12 @@ public class MouvementAvatar : MonoBehaviour
 
                 }
             }*/
+            #endregion
 
-            
-            if (Physics.Raycast(transform.position, -transform.up, out hit, transform.localScale.y * 0.5f + 10f))
+            if (Physics.Raycast(transform.position, -transform.up, out hit, transform.localScale.y * 0.5f + 0.75f))
             {
-
-                Debug.DrawRay(transform.position, -transform.up * 10f, Color.yellow);
+                onIsFeet = true;
+                Debug.DrawRay(transform.position, -transform.up * 0.75f, Color.yellow);
                 rb.useGravity = false;
                 gravityOrientation = hit.normal.normalized;
                 if (gravityOrientation.y > 0)
@@ -204,9 +221,16 @@ public class MouvementAvatar : MonoBehaviour
 
                 }
             }
+            else
+            {
+                onIsFeet = false;
+                rb.AddForce(Physics.gravity);
+            }
         }
         else
         {
+            onIsFeet = false;
+            print("normal gravity");
             rb.AddForce(Physics.gravity);
         }
     }
@@ -214,9 +238,33 @@ public class MouvementAvatar : MonoBehaviour
     private void OnCollisionStay(Collision collision)
     {
         onfloor = true;
+        if (onIsFeet == false && rb.velocity.magnitude < 0.01f)
+        {
+            print("Jump");
+            StartCoroutine(JumpAndRecenter());
+        }
     }
     private void OnCollisionExit(Collision collision)
     {
         onfloor = false;
+    }
+
+
+    IEnumerator JumpAndRecenter()
+    {
+        rb.AddForce(Vector3.up * jumpPower, ForceMode.Impulse);
+        Vector3 baseRotation = transform.rotation.eulerAngles;
+        float startTime = Time.time;
+        Vector3 floorRotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, 0).eulerAngles;
+        for (int i = 0; i < 50; i++)
+        {
+            print(baseRotation);
+            transform.rotation = Quaternion.Euler(Vector3.Slerp(baseRotation, floorRotation, (Time.time - startTime)));
+            yield return new WaitForSeconds(0.005f);
+            print("rotate");
+        }
+        sliding = false;
+        onIsFeet = true;
+        print("Sliding Off");
     }
 }

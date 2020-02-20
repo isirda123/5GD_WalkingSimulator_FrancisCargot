@@ -267,6 +267,7 @@ GameObject:
   - component: {fileID: 7023463393967157990}
   - component: {fileID: 7023463393967157997}
   - component: {fileID: 1530528668}
+  - component: {fileID: 1530528672}
   m_Layer: 0
   m_Name: Avatar
   m_TagString: Untagged
@@ -351,12 +352,28 @@ MonoBehaviour:
   processVolume: {fileID: 0}
   blurryBase: {fileID: 11400000, guid: f1b05d88ce2163f41834ccbcbf75a2c5, type: 2}
   blurryRange: {fileID: 11400000, guid: 9b8279feb4a9ded4a91946ac66d9b81c, type: 2}
+  blurringTime: 0
   ice: {fileID: 13400000, guid: b2932973059f5cb4e86fee8b83c3ca6e, type: 2}
   snailPhysics: {fileID: 13400000, guid: 60e5978197e22f446876d1c4015f26a4, type: 2}
+  inputWaypoint: 010100000201000003010000040100000501000006010000070100000801000009010000
+  waypointPosition:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   mouvementSpeed: 0.33
   rotationSpeed: 90
   gravityOrientation: {x: 0, y: 0, z: 0}
   powerOfGravity: 100
+  modeZoom: 0
+  sliding: 0
+  onIsFeet: 0
+  jumpPower: 5
 --- !u!54 &7023463393967157997
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -368,7 +385,7 @@ Rigidbody:
   m_Mass: 10
   m_Drag: 1
   m_AngularDrag: 0.05
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -387,3 +404,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: -2508796484986968503, guid: 7bb915f14589aa948833559d7e856557, type: 3}
+--- !u!135 &1530528672
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7023463393967157991}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: 0.88
+  m_Center: {x: 0, y: 0, z: 0}
