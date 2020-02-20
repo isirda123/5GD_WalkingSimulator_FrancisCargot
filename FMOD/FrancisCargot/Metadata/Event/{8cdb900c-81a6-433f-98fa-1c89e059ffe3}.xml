@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="Event" id="{8cdb900c-81a6-433f-98fa-1c89e059ffe3}">
 		<property name="name">
-			<value>them_bass</value>
+			<value>them_brass</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
@@ -72,6 +72,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{7aaa4d9a-69e6-4b60-a1ae-c348e2d78eea}">
+		<property name="volume">
+			<value>-17</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{260e28d1-47f7-4e60-8bcd-1cbeb0e86fa2}</destination>
 		</relationship>
