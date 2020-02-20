@@ -204,10 +204,10 @@ public class MouvementAvatar : MonoBehaviour
             }*/
             #endregion
 
-            if (Physics.Raycast(transform.position, -transform.up, out hit, transform.localScale.y * 0.5f + 0.45f))
+            if (Physics.Raycast(transform.position, -transform.up, out hit, transform.localScale.y * 0.5f + 0.75f))
             {
                 onIsFeet = true;
-                Debug.DrawRay(transform.position, -transform.up * 0.45f, Color.yellow);
+                Debug.DrawRay(transform.position, -transform.up * 0.75f, Color.yellow);
                 rb.useGravity = false;
                 gravityOrientation = hit.normal.normalized;
                 if (gravityOrientation.y > 0)
@@ -255,7 +255,7 @@ public class MouvementAvatar : MonoBehaviour
         rb.AddForce(Vector3.up * jumpPower, ForceMode.Impulse);
         Vector3 baseRotation = transform.rotation.eulerAngles;
         float startTime = Time.time;
-        Vector3 floorRotation =  Quaternion.LookRotation(transform.forward, Vector3.up).eulerAngles;
+        Vector3 floorRotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, 0).eulerAngles;
         for (int i = 0; i < 50; i++)
         {
             print(baseRotation);
