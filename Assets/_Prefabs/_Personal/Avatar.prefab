@@ -369,7 +369,7 @@ MonoBehaviour:
   mouvementSpeed: 0.33
   rotationSpeed: 90
   gravityOrientation: {x: 0, y: 0, z: 0}
-  powerOfGravity: 50
+  powerOfGravity: 100
   modeZoom: 0
   sliding: 0
   onIsFeet: 0
