@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class OrientationCamera : MonoBehaviour
 {
+    [SerializeField] Transform parent;
+    [SerializeField] ControllerSnail controllerSnail;
+    [SerializeField] Transform target;
     [SerializeField] float sensibilityOfMouth;
     public float xRotationMax;
     public float yRotationMax;
+    public float speedToTarget = 0.02f;
+    public float durationToTarget = 0.02f;
 
     float rotX, rotY;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,18 +26,44 @@ public class OrientationCamera : MonoBehaviour
     void Update()
     {
         LookAtTheMouse();
+        SmoothCameraOnTarget();
     }
 
     void LookAtTheMouse()
     {
-        
         rotX += -Input.GetAxis("Mouse Y") * sensibilityOfMouth;
         rotY += Input.GetAxis("Mouse X") * sensibilityOfMouth;
         rotX = Mathf.Clamp(rotX, -xRotationMax, xRotationMax);
         rotY = Mathf.Clamp(rotY, -yRotationMax, yRotationMax);
 
         transform.localRotation = Quaternion.Euler(rotX, rotY, 0);
-        //CheckForRotationMax();
+    }
+
+    void SmoothCameraOnTarget()
+    {
+        if (controllerSnail.wasNewNormal)
+        {
+            if (lerpCameraOnTarget != null)
+                StopCoroutine(lerpCameraOnTarget);
+
+            lerpCameraOnTarget = LerpCameraOnTarget();
+            StartCoroutine(lerpCameraOnTarget);
+        }
+    }
+
+    IEnumerator lerpCameraOnTarget;
+    IEnumerator LerpCameraOnTarget()
+    {
+        Quaternion startRotation = parent.rotation;
+
+        float startTime = Time.time;
+
+        while (Time.time - startTime < durationToTarget)
+        {
+            parent.rotation = Quaternion.Slerp(startRotation, target.rotation, (Time.time - startTime) / durationToTarget);
+
+            yield return null;
+        }
     }
 
     #region Don't look at this

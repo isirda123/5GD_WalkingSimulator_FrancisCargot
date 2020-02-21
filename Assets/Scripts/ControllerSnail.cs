@@ -17,6 +17,8 @@ public class ControllerSnail : MonoBehaviour
 
     float ValueYOfRotation;
 
+    public bool wasNewNormal;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,22 +32,27 @@ public class ControllerSnail : MonoBehaviour
         {
             MoveTheSnail();
         }
+
         CheckForSurface();
     }
 
 
     void MoveTheSnail()
     {
-        transform.Translate(RotationChild.transform.forward * speedOfSnail*Time.deltaTime);
-        if (mainCamera.transform.localRotation.eulerAngles.y > 180)
+        float saveY = transform.position.y;
+        transform.Translate(mainCamera.transform.forward * speedOfSnail * Time.deltaTime);
+        transform.position = new Vector3(transform.position.x, saveY, transform.position.z);
+
+        if (mainCamera.transform.localRotation.eulerAngles.y > 180f)
         {
-            ValueYOfRotation = mainCamera.transform.localRotation.eulerAngles.y - 360;
+            ValueYOfRotation = mainCamera.transform.localRotation.eulerAngles.y - 360f;
         }
         else
         {
             ValueYOfRotation = mainCamera.transform.localRotation.eulerAngles.y;
         }
-        RotationChild.transform.Rotate(0, ValueYOfRotation*Time.deltaTime, 0);
+
+        RotationChild.transform.Rotate(0, ValueYOfRotation * Time.deltaTime, 0);
     }
 
     void CheckForSurface()
@@ -53,6 +60,11 @@ public class ControllerSnail : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(transform.position, -transform.up, out hit, HeightSnail * 0.5f))
         {
+            if (previousHit.normal != hit.normal)
+                wasNewNormal = true;
+            else
+                wasNewNormal = false;
+
             Debug.DrawRay(transform.position, -transform.up * 0.5f, Color.red);
             float yAxis = transform.localRotation.eulerAngles.y;
             float zAxis = transform.localRotation.eulerAngles.z;
@@ -60,6 +72,8 @@ public class ControllerSnail : MonoBehaviour
             transform.localPosition = hit.normal*HeightSnail*0.5f + hit.point;
             transform.localRotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
             transform.localRotation = Quaternion.Euler(transform.localRotation.eulerAngles.x, yAxis, transform.localRotation.eulerAngles.z);
+
+            previousHit = hit;
         }
         else
         {
