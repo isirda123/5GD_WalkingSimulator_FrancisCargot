@@ -5,8 +5,8 @@ using UnityEngine;
 public class OrientationCamera : MonoBehaviour
 {
     [SerializeField] float sensibilityOfMouth;
-    [SerializeField] float xRotationMax;
-    [SerializeField] float yRotationMax;
+    public float xRotationMax;
+    public float yRotationMax;
 
     float rotX, rotY;
     // Start is called before the first frame update
@@ -42,25 +42,21 @@ public class OrientationCamera : MonoBehaviour
 
         if (transform.localRotation.eulerAngles.x > xRotationMax)
         {
-            print("0");
             transform.Rotate(transform.localRotation.eulerAngles.x - xRotationMax, 0, 0);
         }
 
         if (transform.localRotation.eulerAngles.x < -xRotationMax)
         {
-            print("0");
             transform.Rotate(-xRotationMax - transform.localRotation.eulerAngles.x, 0, 0);
         }
 
         if (transform.localRotation.eulerAngles.y > yRotationMax)
         {
-            print("0");
             transform.Rotate(0, transform.localRotation.eulerAngles.x - xRotationMax, 0);
         }
 
         if (transform.localRotation.eulerAngles.y < -yRotationMax)
         {
-            print("0");
             transform.Rotate(0, -yRotationMax - transform.localRotation.eulerAngles.y, 0);
         }
 
