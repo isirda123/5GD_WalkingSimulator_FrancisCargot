@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/6_MusicalEvent/them_bass
+  Event: event:/6_MusicalEvent/them_brass
   PlayEvent: 3
   StopEvent: 0
   AllowFadeout: 1
