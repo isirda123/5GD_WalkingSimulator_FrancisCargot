@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
+using FMODUnity;
+using EventInstance = FMOD.Studio.EventInstance;
+using RuntimeManager = FMODUnity.RuntimeManager;
 
 public class MouvementAvatar : MonoBehaviour
 {
@@ -32,11 +35,22 @@ public class MouvementAvatar : MonoBehaviour
     [SerializeField] bool onIsFeet = false;
     [SerializeField] float jumpPower;
 
+    bool canPlayEvent;
+
+    [EventRef]
+    public string snailMovementRef;
+    private EventInstance snailMovementEvent;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = this.GetComponent<Rigidbody>();
         mouvementSpeedBase = mouvementSpeed;
+
+
+        snailMovementEvent = RuntimeManager.CreateInstance(snailMovementRef);
+        snailMovementEvent.start();
+        snailMovementEvent.setPaused(true);
     }
 
     // Update is called once per frame
@@ -92,19 +106,30 @@ public class MouvementAvatar : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Z))
         {
-            print("move");
+            //print("move");
             moving = mouvementSpeed;
         }
 
         if (Input.GetKey(KeyCode.Q))
         {
-            print("rotate-");
+            //print("rotate-");
             rotate -= rotationSpeed;
         }
         if (Input.GetKey(KeyCode.D))
         {
-            print("rotate+");
+            //print("rotate+");
             rotate += rotationSpeed;
+        }
+
+        if (moving != 0 && canPlayEvent)
+        {
+            canPlayEvent = false;
+            snailMovementEvent.setPaused(false);
+        }
+        else if (moving == 0  && !canPlayEvent)
+        {
+            canPlayEvent = true;
+            snailMovementEvent.setPaused(true);
         }
         #endregion
 

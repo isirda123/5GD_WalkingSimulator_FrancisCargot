@@ -93,8 +93,11 @@
 	</object>
 	<object class="MixerBusPanner" id="{84d26e01-97a5-4aec-9632-d0ff0d7a211f}" />
 	<object class="MultiSound" id="{f86fb83c-07ea-42fa-8614-e61367cfa6c2}">
+		<property name="isAsync">
+			<value>true</value>
+		</property>
 		<property name="length">
-			<value>2</value>
+			<value>0.25</value>
 		</property>
 		<property name="pitch">
 			<value>-5.5</value>
@@ -106,7 +109,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{318c045b-a870-42b2-9de8-41f00576f513}">
 		<property name="volume">
-			<value>-20.5</value>
+			<value>-15</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>
@@ -219,7 +222,7 @@
 			<value>Max Distance</value>
 		</property>
 		<property name="value">
-			<value>15</value>
+			<value>14</value>
 		</property>
 		<property name="curve">
 			<value>{(0.000000,0.000000)(2.000000,1.000000)(5.000000,5.000000)(10.000000,10.000000)(15.000000,100.000000)(20.000000,1000.000000)(27.000000,10000.000000)}</value>

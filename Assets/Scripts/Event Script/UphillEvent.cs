@@ -11,7 +11,6 @@ public class UphillEvent : MonoBehaviour
 
     [EventRef]
     public string uphillRef;
-
     private EventInstance uphillEvent;
 
     private void Awake()
@@ -27,6 +26,6 @@ public class UphillEvent : MonoBehaviour
             return;
         }
 
-        uphillEvent.setParameterByName("Height", Mathf.Clamp(playerTransform.position.y, 0f, 4f) / 4f);
+        uphillEvent.setParameterByName("Height", Mathf.Clamp(playerTransform.position.y, 0f, 5f) / 5f);
     }
 }

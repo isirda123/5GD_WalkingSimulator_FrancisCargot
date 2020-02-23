@@ -41,7 +41,7 @@ public class OrientationCamera : MonoBehaviour
 
     void SmoothCameraOnTarget()
     {
-        if (controllerSnail.wasNewNormal)
+        if (controllerSnail != null && controllerSnail.wasNewNormal)
         {
             if (lerpCameraOnTarget != null)
                 StopCoroutine(lerpCameraOnTarget);

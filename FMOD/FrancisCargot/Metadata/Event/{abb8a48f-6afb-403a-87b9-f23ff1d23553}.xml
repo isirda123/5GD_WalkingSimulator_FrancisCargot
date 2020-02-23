@@ -70,6 +70,9 @@
 		<relationship name="modules">
 			<destination>{e7692e3b-b455-480e-a1af-9dee19d12e29}</destination>
 		</relationship>
+		<relationship name="markers">
+			<destination>{9cb66de2-6bfd-4f1c-a9ae-0da09f4e1eb3}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{dcd918c2-1dc9-435c-aaa1-e6a4807b9acb}">
 		<property name="volume">
@@ -95,6 +98,9 @@
 		<property name="length">
 			<value>3.8515729166666666</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{97fb0876-595c-4cc6-be51-464b0e3925c5}</destination>
+		</relationship>
 		<relationship name="audioFile">
 			<destination>{74ab0c3d-d712-4788-94bb-b2de4ee59c34}</destination>
 		</relationship>
@@ -113,6 +119,20 @@
 			<destination>{dcd918c2-1dc9-435c-aaa1-e6a4807b9acb}</destination>
 		</relationship>
 	</object>
+	<object class="LoopRegion" id="{9cb66de2-6bfd-4f1c-a9ae-0da09f4e1eb3}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="length">
+			<value>8</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{93c7a079-1382-4c7a-a49b-3c1d443dfa55}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{6c0148cc-17d8-408d-b414-21b27dbeaab0}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{0c264b54-5779-4068-a5f0-5f856559e412}">
 		<relationship name="effects">
 			<destination>{a71d8982-c62f-45bb-960a-a8175435e737}</destination>
@@ -121,6 +141,14 @@
 	</object>
 	<object class="MixerBusPanner" id="{27d98457-3294-4521-a4a8-7b0ec36ad666}" />
 	<object class="MixerBusFader" id="{8424bfa7-7da5-4e26-8005-f274a900ffb0}" />
+	<object class="RandomizerModulator" id="{97fb0876-595c-4cc6-be51-464b0e3925c5}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="amount">
+			<value>12.5</value>
+		</property>
+	</object>
 	<object class="MixerBusEffectChain" id="{2ba82097-8396-4eb7-9f44-6515b3d8f387}">
 		<relationship name="effects">
 			<destination>{297d2d82-c23c-440c-bc1b-4c76c70b26d6}</destination>
@@ -170,7 +198,7 @@
 			<value>Spread</value>
 		</property>
 		<property name="value">
-			<value>9.99999975e-06</value>
+			<value>20</value>
 		</property>
 		<property name="curve">
 			<value>{(0.000000,0.000000)(1.000000,360.000000)}</value>
@@ -192,7 +220,7 @@
 			<value>Max Distance</value>
 		</property>
 		<property name="value">
-			<value>20</value>
+			<value>8</value>
 		</property>
 		<property name="curve">
 			<value>{(0.000000,0.000000)(2.000000,1.000000)(5.000000,5.000000)(10.000000,10.000000)(15.000000,100.000000)(20.000000,1000.000000)(27.000000,10000.000000)}</value>

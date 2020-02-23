@@ -1,5 +1,23 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9177357065860309183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637180830867869630
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-9147974423236958663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17,7 +35,59 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &-9076757630029404649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637180823912270935
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-9047651457728345392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/uphill/Height
+  m_EditorClassIdentifier: 
+  Name: Height
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-8913714801902149586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: OnShell
+  m_EditorClassIdentifier: 
+  Name: OnShell
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &-8786795632132607470
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -67,7 +137,7 @@ MonoBehaviour:
   Path: event:/6_MusicalEvent/them_string_ensemble_short
   guid: 08171b364d954744a405b6ed25e5bb25
   Banks:
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -75,6 +145,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 11998
+--- !u!114 &-8609955982379630257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637180834926918357
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-8544124331083831643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,7 +212,7 @@ MonoBehaviour:
   Path: event:/8_Snapshot/Tunnel
   guid: 28c63d8b08d46e4ab6eb5c106b19cc4c
   Banks:
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -132,6 +220,42 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 8000
+--- !u!114 &-8173026213307490970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637180833505623445
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-8049681922638797925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637180849899143051
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-7768543618692488228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,7 +271,7 @@ MonoBehaviour:
   Path: event:/6_MusicalEvent/them_string_ensemble
   guid: 44913ec97d1be642bb5d667169bb574d
   Banks:
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -170,14 +294,32 @@ MonoBehaviour:
   Path: event:/4_InvisibleStatic3D/tunnel_anthill_0
   guid: 568daf90bda44549a59a50ec03209bce
   Banks:
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 4188
+  Length: 5625
+--- !u!114 &-7620601018231339329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637180809459340534
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-7597751689849070915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,6 +355,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-7122830691768941323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/uphill/Height
+  m_EditorClassIdentifier: 
+  Name: Height
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-7082272937931658454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,8 +403,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/4_InvisibleStatic3D/bird_outisde_1
   guid: e8545ba02214aa4296b83ea386b952fa
-  Banks:
-  - {fileID: 6063908016341126945}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -268,7 +426,7 @@ MonoBehaviour:
   Path: event:/5_Spatial2D/wind_tree
   guid: cc7192091fae9e40818a1859281eb244
   Banks:
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -276,6 +434,40 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 60041
+--- !u!114 &-6758825080401782555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: OnShell
+  m_EditorClassIdentifier: 
+  Name: OnShell
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &-6678224665705629422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: OnShell
+  m_EditorClassIdentifier: 
+  Name: OnShell
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &-6630148367703145806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,7 +501,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-6228667969227279252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -325,7 +517,7 @@ MonoBehaviour:
   Path: event:/3_Animation/ant_step
   guid: 29d1efaccdbb3e41b177bb4fb49d485c
   Banks:
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -351,6 +543,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-5930624526204153780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/uphill/Height
+  m_EditorClassIdentifier: 
+  Name: Height
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-5739447045860636601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -383,7 +592,7 @@ MonoBehaviour:
   Path: event:/3_Animation/crow_picking
   guid: f14a641e02e9c04082c8211e73a47395
   Banks:
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -440,7 +649,7 @@ MonoBehaviour:
   Path: event:/4_InvisibleStatic3D/fly_spider_web
   guid: e22b92285dea324796a5c7ba11c7c987
   Banks:
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -448,6 +657,58 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2577
+--- !u!114 &-4990632338677868419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: OnShell
+  m_EditorClassIdentifier: 
+  Name: OnShell
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &-4955939345206879171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/uphill/Height
+  m_EditorClassIdentifier: 
+  Name: Height
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-4815531303792895574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637180838131142641
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-4811227883068787388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -465,6 +726,24 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-4661779393153279262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637180838524890779
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-4529009237394985569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -480,6 +759,24 @@ MonoBehaviour:
   Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
   SubDir: 
   lastModified: 637178120561941594
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-4486723528088197039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637180813133188283
   LoadResult: 0
   FileSizes: []
   Exists: 0
@@ -517,6 +814,41 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-4275457523499644627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/uphill/Height
+  m_EditorClassIdentifier: 
+  Name: Height
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-4032571907351727446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637180812246693859
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-3997160144739632046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -532,14 +864,48 @@ MonoBehaviour:
   Path: event:/5_Spatial2D/water
   guid: 65f1a39b04aa63469a052a4524e0c67a
   Banks:
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 175129
+  Length: 202335
+--- !u!114 &-3917832925117172760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: OnShell
+  m_EditorClassIdentifier: 
+  Name: OnShell
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &-3815881671187860885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/uphill/Height
+  m_EditorClassIdentifier: 
+  Name: Height
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-3672179665140306861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -558,6 +924,65 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-3643150116036573579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637180837143570036
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-3628786292126249095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637180818072813728
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-3513635390606077072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/4_InvisibleStatic3D/worm_underground
+  m_EditorClassIdentifier: 
+  Path: event:/4_InvisibleStatic3D/worm_underground
+  guid: b84467c40f9e0e4293a732fb5d2a1f96
+  Banks:
+  - {fileID: -8049681922638797925}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5000
 --- !u!114 &-3439981865614675593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -598,6 +1023,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-3329136949177229381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637180838319768050
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-3296465749743487633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -631,7 +1074,7 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-3132000596107289502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -650,6 +1093,41 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-3108854215454676345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: OnShell
+  m_EditorClassIdentifier: 
+  Name: OnShell
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &-3083262882145808229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637180824040134878
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-3029543999555568386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -668,6 +1146,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-2776846708327846851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: OnShell
+  m_EditorClassIdentifier: 
+  Name: OnShell
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &-2703500574805298922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -684,6 +1179,24 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
+  Exists: 0
+--- !u!114 &-2692659176684200882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637180814846824340
+  LoadResult: 0
+  FileSizes: []
   Exists: 0
 --- !u!114 &-2322308525592046008
 MonoBehaviour:
@@ -719,6 +1232,29 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &-2198730305733396729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/4_InvisibleStatic3D/bird_outside_1
+  m_EditorClassIdentifier: 
+  Path: event:/4_InvisibleStatic3D/bird_outside_1
+  guid: e8545ba02214aa4296b83ea386b952fa
+  Banks:
+  - {fileID: -8049681922638797925}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 8281
 --- !u!114 &-2180202396055296562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -755,6 +1291,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-2057441441166209647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637180832944455019
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-1994586500237398387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -787,7 +1341,7 @@ MonoBehaviour:
   Path: snapshot:/OnShell
   guid: 79b196e6ccc2f3498928e2d2f96f3f6a
   Banks:
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -810,16 +1364,136 @@ MonoBehaviour:
   Path: event:/5_Spatial2D/uphill
   guid: e5298a9c47f6804889b043a635bb4a9f
   Banks:
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -6380250152346711773}
+  - {fileID: 2524493682362648056}
   MinDistance: 0
   MaxDistance: 0
   Length: 108750
+--- !u!114 &-1865152570752896170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/uphill/Height
+  m_EditorClassIdentifier: 
+  Name: Height
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-1791151980129522814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/uphill/Height
+  m_EditorClassIdentifier: 
+  Name: Height
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-1759255787281274049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/uphill/Height
+  m_EditorClassIdentifier: 
+  Name: Height
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-1570475456200309448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: OnShell
+  m_EditorClassIdentifier: 
+  Name: OnShell
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &-1562534693903838025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637180803477244819
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-1524841864307816092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: OnShell
+  m_EditorClassIdentifier: 
+  Name: OnShell
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &-1319208807168932036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/uphill/Height
+  m_EditorClassIdentifier: 
+  Name: Height
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-1250723132455997788
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -851,7 +1525,7 @@ MonoBehaviour:
   Path: event:/7_OnShell/snail_heart
   guid: b4927c9d2d010d4d868ed49fee38c7e9
   Banks:
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -950,6 +1624,23 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &-637047819127021031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: OnShell
+  m_EditorClassIdentifier: 
+  Name: OnShell
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &-572501700952696649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -965,7 +1656,7 @@ MonoBehaviour:
   Path: event:/3_Animation/ant_vocal
   guid: 2393c581ca9d4c41b7b92312b9663c87
   Banks:
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -1077,6 +1768,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-256616061867007785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/uphill/Height
+  m_EditorClassIdentifier: 
+  Name: Height
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-157961823685012488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1110,14 +1818,14 @@ MonoBehaviour:
   Path: event:/2_Trigger/human_step
   guid: f92bfd6a6976ca43b2f0e309f77e0878
   Banks:
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 15783
+  Length: 10746
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1132,11 +1840,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 6395275259621330884}
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   EditorEvents:
   - {fileID: -8641794796547434281}
   - {fileID: 8483469921077643385}
-  - {fileID: 8225677993365820969}
   - {fileID: 8743513692818933558}
   - {fileID: -572501700952696649}
   - {fileID: -8283230114957735239}
@@ -1160,7 +1867,6 @@ MonoBehaviour:
   - {fileID: 7498918450445327987}
   - {fileID: -5042431560187020096}
   - {fileID: -1901164445824953811}
-  - {fileID: -7027639831505507424}
   - {fileID: 7395835293677212709}
   - {fileID: -5439682095610933302}
   - {fileID: 1293673569565089108}
@@ -1168,13 +1874,17 @@ MonoBehaviour:
   - {fileID: 7512964635877819907}
   - {fileID: 5299569775543316835}
   - {fileID: 6903917968851488228}
+  - {fileID: 1331153661874200259}
+  - {fileID: -2198730305733396729}
+  - {fileID: -3513635390606077072}
+  - {fileID: 3828486933945125800}
   EditorParameters:
-  - {fileID: -3237567925554215507}
+  - {fileID: 8939527216062240077}
   MasterBanks:
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   StringsBanks:
   - {fileID: 6395275259621330884}
-  stringsBankWriteTime: 637180796330502181
+  stringsBankWriteTime: 637180849899212870
   cacheVersion: 3
 --- !u!114 &257476587125695667
 MonoBehaviour:
@@ -1191,7 +1901,7 @@ MonoBehaviour:
   Path: event:/2_Trigger/spider_noise
   guid: 7c97890e310ec44484d029ff2da36ea7
   Banks:
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1216,6 +1926,74 @@ MonoBehaviour:
   lastModified: 637178176016786631
   LoadResult: 0
   FileSizes: []
+  Exists: 0
+--- !u!114 &669511002924530507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/uphill/Height
+  m_EditorClassIdentifier: 
+  Name: Height
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &702949703145540855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: OnShell
+  m_EditorClassIdentifier: 
+  Name: OnShell
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &733233664787816022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/uphill/Height
+  m_EditorClassIdentifier: 
+  Name: Height
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &810080541895792992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: OnShell
+  m_EditorClassIdentifier: 
+  Name: OnShell
+  Min: 0
+  Max: 2
+  Default: 0
   Exists: 0
 --- !u!114 &1003317933426839201
 MonoBehaviour:
@@ -1249,7 +2027,7 @@ MonoBehaviour:
   Path: event:/6_MusicalEvent/them_woodflute
   guid: f65c036f8ad188499a78be0c4d2049f7
   Banks:
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1257,6 +2035,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 11998
+--- !u!114 &1331153661874200259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/4_InvisibleStatic3D/bird_outside_0
+  m_EditorClassIdentifier: 
+  Path: event:/4_InvisibleStatic3D/bird_outside_0
+  guid: 169081498a28134798f863dae7016427
+  Banks:
+  - {fileID: -8049681922638797925}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2194
 --- !u!114 &1863197229313015245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1293,6 +2094,40 @@ MonoBehaviour:
   Default: 0
   Exists: 1
 --- !u!114 &2034150362091789710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/uphill/Height
+  m_EditorClassIdentifier: 
+  Name: Height
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &2109678318981209915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: OnShell
+  m_EditorClassIdentifier: 
+  Name: OnShell
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &2133049881397842109
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1359,7 +2194,7 @@ MonoBehaviour:
   Path: event:/3_Animation/leaf_fall
   guid: 63d4192f7799ca478642242a0741af3b
   Banks:
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1367,6 +2202,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 773
+--- !u!114 &2304842620513745933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637180809367147163
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &2312716892266361075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1402,6 +2255,23 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &2401322380457674092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/uphill/Height
+  m_EditorClassIdentifier: 
+  Name: Height
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &2410418070811678250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1417,7 +2287,7 @@ MonoBehaviour:
   Path: event:/6_MusicalEvent/them_piz
   guid: 751990a3558add48a1634b4d62ef702c
   Banks:
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1425,6 +2295,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 11197
+--- !u!114 &2508730189782621044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: OnShell
+  m_EditorClassIdentifier: 
+  Name: OnShell
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &2518871431669386985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1440,14 +2327,48 @@ MonoBehaviour:
   Path: event:/4_InvisibleStatic3D/tunnel_anthill_1
   guid: 8fa4b8abfb6a3a4087b9f23ff1d23553
   Banks:
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 3851
+  Length: 8000
+--- !u!114 &2524493682362648056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/uphill/Height
+  m_EditorClassIdentifier: 
+  Name: Height
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &2556580715849456835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/uphill/Height
+  m_EditorClassIdentifier: 
+  Name: Height
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &2598035834443754398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1481,6 +2402,24 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
+  Exists: 0
+--- !u!114 &2762044208069124081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637180826992579211
+  LoadResult: 0
+  FileSizes: []
   Exists: 0
 --- !u!114 &2795310993068891220
 MonoBehaviour:
@@ -1531,7 +2470,7 @@ MonoBehaviour:
   Path: event:/3_Animation/crow_scream
   guid: 6f168199ec47c24cb7d1e9c92fa7fba8
   Banks:
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1539,6 +2478,149 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 500
+--- !u!114 &3109243203513271346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/uphill/Height
+  m_EditorClassIdentifier: 
+  Name: Height
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &3315175005513958054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/uphill/Height
+  m_EditorClassIdentifier: 
+  Name: Height
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &3419133923315065055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637180816626957032
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &3669813593353054064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/uphill/Height
+  m_EditorClassIdentifier: 
+  Name: Height
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &3729418180789791457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: OnShell
+  m_EditorClassIdentifier: 
+  Name: OnShell
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &3828486933945125800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/4_InvisibleStatic3D/ant_underground
+  m_EditorClassIdentifier: 
+  Path: event:/4_InvisibleStatic3D/ant_underground
+  guid: c430f4fa8c6dfb45b275c0ced815500a
+  Banks:
+  - {fileID: -8049681922638797925}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5000
+--- !u!114 &3940666682785507071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/uphill/Height
+  m_EditorClassIdentifier: 
+  Name: Height
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &3960777060342279613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/uphill/Height
+  m_EditorClassIdentifier: 
+  Name: Height
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &3961000358326895570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1610,6 +2692,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &4707688911793191018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/uphill/Height
+  m_EditorClassIdentifier: 
+  Name: Height
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &5002550097825694993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1645,6 +2744,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &5299349127671540188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637180818420083206
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &5299569775543316835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1660,7 +2777,7 @@ MonoBehaviour:
   Path: event:/6_MusicalEvent/them_brass
   guid: 0c90db8ca6813f4398fa1c89e059ffe3
   Banks:
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1668,7 +2785,59 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 11998
+--- !u!114 &5462095764292331275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637180834077887620
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &5474936540105229869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: OnShell
+  m_EditorClassIdentifier: 
+  Name: OnShell
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &5506413389540051685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: OnShell
+  m_EditorClassIdentifier: 
+  Name: OnShell
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &5703238955702628150
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1703,6 +2872,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &6012302357853115429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637180836973748068
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &6063908016341126945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1720,7 +2907,25 @@ MonoBehaviour:
   lastModified: 637180796330442347
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
+--- !u!114 &6136805374962872553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637180815837684705
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &6158876799762289860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1736,6 +2941,23 @@ MonoBehaviour:
   Name: OnShell
   Min: 0
   Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &6219376527972830054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/uphill/Height
+  m_EditorClassIdentifier: 
+  Name: Height
+  Min: 0
+  Max: 1
   Default: 0
   Exists: 0
 --- !u!114 &6292286734247642618
@@ -1770,11 +2992,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: FMOD/FrancisCargot/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637180796330502181
+  lastModified: 637180849899212870
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 2542
+    Value: 2634
   Exists: 1
 --- !u!114 &6474825265537121745
 MonoBehaviour:
@@ -1826,7 +3048,7 @@ MonoBehaviour:
   Path: event:/3_Animation/cigarette_ember
   guid: a3c2ccc434daf8408497afc2000ba53a
   Banks:
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -1866,7 +3088,7 @@ MonoBehaviour:
   Path: snapshot:/Tunnel
   guid: 9f588d3e6ede5b459ee4b77311520ebb
   Banks:
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -1907,14 +3129,14 @@ MonoBehaviour:
   Path: event:/3_Animation/butterfly_fly
   guid: 04e1642d2d598244b277850a72de9d59
   Banks:
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 2000
+  Length: 250
 --- !u!114 &6926375950629569517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1964,7 +3186,7 @@ MonoBehaviour:
   Path: event:/2_Trigger/crow_push
   guid: 32e3907ed5fa9543b73ed14dac60a75b
   Banks:
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1972,6 +3194,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2321
+--- !u!114 &7155673622148720124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/uphill/Height
+  m_EditorClassIdentifier: 
+  Name: Height
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &7258501958417816725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1988,6 +3227,24 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+  Exists: 0
+--- !u!114 &7305237936556690614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637180808863377755
+  LoadResult: 0
+  FileSizes: []
   Exists: 0
 --- !u!114 &7314077515059503947
 MonoBehaviour:
@@ -2021,7 +3278,7 @@ MonoBehaviour:
   Path: event:/3_Animation/spider_step
   guid: eb6e42856b674543a9174146719fe74f
   Banks:
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -2044,7 +3301,7 @@ MonoBehaviour:
   Path: event:/8_Snapshot/Normal
   guid: d2b436ccf6bd00419718d0f4dd518e6f
   Banks:
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2067,7 +3324,7 @@ MonoBehaviour:
   Path: event:/2_Trigger/cigarette_falling
   guid: f9a71b9ddc78e14e9f9634b6c4d01da6
   Banks:
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2093,6 +3350,41 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &7682190770523121565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: OnShell
+  m_EditorClassIdentifier: 
+  Name: OnShell
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &7715462531117326539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637180843497394820
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &7799554709343145613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2108,7 +3400,7 @@ MonoBehaviour:
   Path: snapshot:/Normal
   guid: 892f9a8af50f7a41af83e00807fbb8b5
   Banks:
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -2200,8 +3492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/4_InvisibleStatic3D/bird_outisde_0
   guid: 169081498a28134798f863dae7016427
-  Banks:
-  - {fileID: 6063908016341126945}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2260,7 +3551,7 @@ MonoBehaviour:
   Path: event:/3_Animation/snail_movement
   guid: 38afc55dba19a84e9afc89c9901c48bf
   Banks:
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -2300,7 +3591,7 @@ MonoBehaviour:
   Path: event:/8_Snapshot/OnShell
   guid: 10fdf43a99734d4cbbe3fb6af959d090
   Banks:
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2308,6 +3599,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 8000
+--- !u!114 &8497136688345048942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637180843663043544
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &8499446712667477430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2321,6 +3630,23 @@ MonoBehaviour:
   m_Name: parameter:/water/DistanceFoam
   m_EditorClassIdentifier: 
   Name: DistanceFoam
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &8604106720065217228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/uphill/Height
+  m_EditorClassIdentifier: 
+  Name: Height
   Min: 0
   Max: 1
   Default: 0
@@ -2357,7 +3683,7 @@ MonoBehaviour:
   Path: event:/2_Trigger/cigarette_impact_falling
   guid: 172a620090419a46a8407ee0349b4e71
   Banks:
-  - {fileID: 6063908016341126945}
+  - {fileID: -8049681922638797925}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2365,6 +3691,75 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2108
+--- !u!114 &8751699643900194822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/uphill/Height
+  m_EditorClassIdentifier: 
+  Name: Height
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &8786923192052276503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637180817786039811
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &8939527216062240077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: OnShell
+  m_EditorClassIdentifier: 
+  Name: OnShell
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &9009665631056916635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/uphill/Height
+  m_EditorClassIdentifier: 
+  Name: Height
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &9070758929843379019
 MonoBehaviour:
   m_ObjectHideFlags: 0

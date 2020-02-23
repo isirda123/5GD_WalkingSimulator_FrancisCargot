@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="Event" id="{49819016-288a-4713-98f8-63dae7016427}">
 		<property name="name">
-			<value>bird_outisde_0</value>
+			<value>bird_outside_0</value>
 		</property>
 		<property name="outputFormat">
 			<value>0</value>
@@ -72,6 +72,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{8d174288-724c-42f4-8068-a6aa3d57e4d4}">
+		<property name="volume">
+			<value>-13.5</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{2fa7f98a-fef6-4638-803d-5f09a7439b62}</destination>
 		</relationship>
@@ -112,6 +115,7 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{2fa7f98a-fef6-4638-803d-5f09a7439b62}">
 		<relationship name="effects">
+			<destination>{b1ea6fff-0521-4ea6-82ce-bcfa3aa0d3aa}</destination>
 			<destination>{a909286e-fe7e-4426-adc0-cfa705c2a0ac}</destination>
 			<destination>{6e144964-9f36-4ea3-bb54-4e9327d3158d}</destination>
 		</relationship>
@@ -124,6 +128,23 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{95d615af-b8ff-4cac-ab2a-709c52c64281}" />
+	<object class="SFXReverbEffect" id="{b1ea6fff-0521-4ea6-82ce-bcfa3aa0d3aa}">
+		<property name="decayTime">
+			<value>500</value>
+		</property>
+		<property name="HFDecayRatio">
+			<value>10</value>
+		</property>
+		<property name="diffusion">
+			<value>14</value>
+		</property>
+		<property name="lowShelfGain">
+			<value>-20</value>
+		</property>
+		<property name="highCut">
+			<value>20</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{a909286e-fe7e-4426-adc0-cfa705c2a0ac}" />
 	<object class="PluginEffect" id="{6e144964-9f36-4ea3-bb54-4e9327d3158d}">
 		<relationship name="plugin">
@@ -167,7 +188,7 @@
 			<value>Spread</value>
 		</property>
 		<property name="value">
-			<value>9.99999975e-06</value>
+			<value>0</value>
 		</property>
 		<property name="curve">
 			<value>{(0.000000,0.000000)(1.000000,360.000000)}</value>
@@ -189,7 +210,7 @@
 			<value>Max Distance</value>
 		</property>
 		<property name="value">
-			<value>20</value>
+			<value>60</value>
 		</property>
 		<property name="curve">
 			<value>{(0.000000,0.000000)(2.000000,1.000000)(5.000000,5.000000)(10.000000,10.000000)(15.000000,100.000000)(20.000000,1000.000000)(27.000000,10000.000000)}</value>

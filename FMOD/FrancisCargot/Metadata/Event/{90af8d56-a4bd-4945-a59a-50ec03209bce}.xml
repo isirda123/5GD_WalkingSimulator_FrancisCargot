@@ -70,6 +70,9 @@
 		<relationship name="modules">
 			<destination>{637e4f18-7988-4f2b-8d51-398893be875c}</destination>
 		</relationship>
+		<relationship name="markers">
+			<destination>{10835f25-c811-4a19-800b-cc0defc0755a}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{5acd6c7f-2341-4cdc-be1a-458134911042}">
 		<property name="volume">
@@ -95,6 +98,9 @@
 		<property name="length">
 			<value>4.1881666666666666</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{87a05836-935a-45db-b0a3-058fdb1e07e6}</destination>
+		</relationship>
 		<relationship name="audioFile">
 			<destination>{d2e17ee8-b2e1-4df2-8deb-92775e049db2}</destination>
 		</relationship>
@@ -113,6 +119,20 @@
 			<destination>{5acd6c7f-2341-4cdc-be1a-458134911042}</destination>
 		</relationship>
 	</object>
+	<object class="LoopRegion" id="{10835f25-c811-4a19-800b-cc0defc0755a}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="length">
+			<value>5.625</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{a7090751-3c88-4579-962e-4391fc2b7ac2}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{6835934e-5812-41a8-8154-b62aa445ae7f}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{3ddca8a9-d85b-41ef-b531-4b791a29c0c1}">
 		<relationship name="effects">
 			<destination>{a11642de-f57a-496f-86d5-547f5d9ab84d}</destination>
@@ -121,6 +141,14 @@
 	</object>
 	<object class="MixerBusPanner" id="{2bc0f195-0cb4-46e9-8713-a5a8520fe7cd}" />
 	<object class="MixerBusFader" id="{c314cbb7-f0fe-4e0c-ae1f-c2f78267e680}" />
+	<object class="RandomizerModulator" id="{87a05836-935a-45db-b0a3-058fdb1e07e6}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="amount">
+			<value>12.5</value>
+		</property>
+	</object>
 	<object class="MixerBusEffectChain" id="{bd859827-efa7-45a9-ad0e-1ffdd39906a4}">
 		<relationship name="effects">
 			<destination>{6df951db-f36f-46d7-9989-496a92d5de5f}</destination>
@@ -179,7 +207,7 @@
 			<value>Spread</value>
 		</property>
 		<property name="value">
-			<value>9.99999975e-06</value>
+			<value>20</value>
 		</property>
 		<property name="curve">
 			<value>{(0.000000,0.000000)(1.000000,360.000000)}</value>
@@ -201,7 +229,7 @@
 			<value>Max Distance</value>
 		</property>
 		<property name="value">
-			<value>20</value>
+			<value>8</value>
 		</property>
 		<property name="curve">
 			<value>{(0.000000,0.000000)(2.000000,1.000000)(5.000000,5.000000)(10.000000,10.000000)(15.000000,100.000000)(20.000000,1000.000000)(27.000000,10000.000000)}</value>

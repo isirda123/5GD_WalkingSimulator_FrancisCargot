@@ -164,7 +164,7 @@
 	<object class="MixerBusFader" id="{903cd054-b032-469b-920f-ad9d59c236df}" />
 	<object class="ThreeEQEffect" id="{746cca0b-1ddf-4c79-a8cc-b8344a9194b5}">
 		<property name="highGain">
-			<value>-17</value>
+			<value>-4</value>
 		</property>
 	</object>
 	<object class="SFXReverbEffect" id="{b25d04e7-8453-4f75-ad2f-59ce8ca43f25}">
@@ -220,7 +220,7 @@
 			<value>Spread</value>
 		</property>
 		<property name="value">
-			<value>9.99999975e-06</value>
+			<value>90</value>
 		</property>
 		<property name="curve">
 			<value>{(0.000000,0.000000)(1.000000,360.000000)}</value>
@@ -242,7 +242,7 @@
 			<value>Max Distance</value>
 		</property>
 		<property name="value">
-			<value>20</value>
+			<value>10</value>
 		</property>
 		<property name="curve">
 			<value>{(0.000000,0.000000)(2.000000,1.000000)(5.000000,5.000000)(10.000000,10.000000)(15.000000,100.000000)(20.000000,1000.000000)(27.000000,10000.000000)}</value>
