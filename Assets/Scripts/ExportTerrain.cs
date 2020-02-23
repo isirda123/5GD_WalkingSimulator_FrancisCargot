@@ -4,6 +4,7 @@
 using UnityEngine;
 using UnityEditor;
 using System;
+#if UNITY_EDITOR
 using System.Collections;
 using System.IO;
 using System.Text;
@@ -216,3 +217,4 @@ class ExportTerrain : EditorWindow
         }
     }
 }
+#endif
