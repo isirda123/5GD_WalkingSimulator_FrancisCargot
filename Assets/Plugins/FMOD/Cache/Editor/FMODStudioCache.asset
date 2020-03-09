@@ -137,7 +137,7 @@ MonoBehaviour:
   Path: event:/6_MusicalEvent/them_string_ensemble_short
   guid: 08171b364d954744a405b6ed25e5bb25
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -180,6 +180,23 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &-8488508488879891238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/uphill/Height
+  m_EditorClassIdentifier: 
+  Name: Height
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-8428835923224128887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,7 +229,7 @@ MonoBehaviour:
   Path: event:/8_Snapshot/Tunnel
   guid: 28c63d8b08d46e4ab6eb5c106b19cc4c
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -256,6 +273,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-7848230254868793925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: OnShell
+  m_EditorClassIdentifier: 
+  Name: OnShell
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
 --- !u!114 &-7768543618692488228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,7 +305,7 @@ MonoBehaviour:
   Path: event:/6_MusicalEvent/them_string_ensemble
   guid: 44913ec97d1be642bb5d667169bb574d
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -294,7 +328,7 @@ MonoBehaviour:
   Path: event:/4_InvisibleStatic3D/tunnel_anthill_0
   guid: 568daf90bda44549a59a50ec03209bce
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -426,7 +460,7 @@ MonoBehaviour:
   Path: event:/5_Spatial2D/wind_tree
   guid: cc7192091fae9e40818a1859281eb244
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -501,7 +535,7 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-6380250152346711773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -534,7 +568,7 @@ MonoBehaviour:
   Path: event:/3_Animation/ant_step
   guid: 29d1efaccdbb3e41b177bb4fb49d485c
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -609,7 +643,7 @@ MonoBehaviour:
   Path: event:/3_Animation/crow_picking
   guid: f14a641e02e9c04082c8211e73a47395
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -666,7 +700,7 @@ MonoBehaviour:
   Path: event:/4_InvisibleStatic3D/fly_spider_web
   guid: e22b92285dea324796a5c7ba11c7c987
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -881,7 +915,7 @@ MonoBehaviour:
   Path: event:/5_Spatial2D/water
   guid: 65f1a39b04aa63469a052a4524e0c67a
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -992,7 +1026,7 @@ MonoBehaviour:
   Path: event:/4_InvisibleStatic3D/worm_underground
   guid: b84467c40f9e0e4293a732fb5d2a1f96
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1196,7 +1230,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-2776846708327846851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1316,7 +1350,7 @@ MonoBehaviour:
   Path: event:/4_InvisibleStatic3D/bird_outside_1
   guid: e8545ba02214aa4296b83ea386b952fa
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1410,7 +1444,7 @@ MonoBehaviour:
   Path: snapshot:/OnShell
   guid: 79b196e6ccc2f3498928e2d2f96f3f6a
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -1433,12 +1467,12 @@ MonoBehaviour:
   Path: event:/5_Spatial2D/uphill
   guid: e5298a9c47f6804889b043a635bb4a9f
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -2863253841223342836}
+  - {fileID: -8488508488879891238}
   MinDistance: 0
   MaxDistance: 0
   Length: 108750
@@ -1594,7 +1628,7 @@ MonoBehaviour:
   Path: event:/7_OnShell/snail_heart
   guid: b4927c9d2d010d4d868ed49fee38c7e9
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -1725,7 +1759,7 @@ MonoBehaviour:
   Path: event:/3_Animation/ant_vocal
   guid: 2393c581ca9d4c41b7b92312b9663c87
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -1887,7 +1921,7 @@ MonoBehaviour:
   Path: event:/2_Trigger/human_step
   guid: f92bfd6a6976ca43b2f0e309f77e0878
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1909,7 +1943,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 6395275259621330884}
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   EditorEvents:
   - {fileID: -8641794796547434281}
   - {fileID: 8483469921077643385}
@@ -1948,12 +1982,12 @@ MonoBehaviour:
   - {fileID: -3513635390606077072}
   - {fileID: 3828486933945125800}
   EditorParameters:
-  - {fileID: -6492168531219270973}
+  - {fileID: -7848230254868793925}
   MasterBanks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   StringsBanks:
   - {fileID: 6395275259621330884}
-  stringsBankWriteTime: 637193002851795009
+  stringsBankWriteTime: 637193583481956775
   cacheVersion: 3
 --- !u!114 &257476587125695667
 MonoBehaviour:
@@ -1970,7 +2004,7 @@ MonoBehaviour:
   Path: event:/2_Trigger/spider_noise
   guid: 7c97890e310ec44484d029ff2da36ea7
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2096,7 +2130,7 @@ MonoBehaviour:
   Path: event:/6_MusicalEvent/them_woodflute
   guid: f65c036f8ad188499a78be0c4d2049f7
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -2119,7 +2153,7 @@ MonoBehaviour:
   Path: event:/4_InvisibleStatic3D/bird_outside_0
   guid: 169081498a28134798f863dae7016427
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2263,7 +2297,7 @@ MonoBehaviour:
   Path: event:/3_Animation/leaf_fall
   guid: 63d4192f7799ca478642242a0741af3b
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2356,7 +2390,7 @@ MonoBehaviour:
   Path: event:/6_MusicalEvent/them_piz
   guid: 751990a3558add48a1634b4d62ef702c
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -2396,7 +2430,7 @@ MonoBehaviour:
   Path: event:/4_InvisibleStatic3D/tunnel_anthill_1
   guid: 8fa4b8abfb6a3a4087b9f23ff1d23553
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -2539,7 +2573,7 @@ MonoBehaviour:
   Path: event:/3_Animation/crow_scream
   guid: 6f168199ec47c24cb7d1e9c92fa7fba8
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2648,7 +2682,7 @@ MonoBehaviour:
   Path: event:/4_InvisibleStatic3D/ant_underground
   guid: c430f4fa8c6dfb45b275c0ced815500a
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2778,7 +2812,7 @@ MonoBehaviour:
   lastModified: 637193002851785083
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &4693833796808450908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2813,6 +2847,24 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &4733105929595195748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/FrancisCargot/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637193583481916874
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &5002550097825694993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2881,7 +2933,7 @@ MonoBehaviour:
   Path: event:/6_MusicalEvent/them_brass
   guid: 0c90db8ca6813f4398fa1c89e059ffe3
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -3096,7 +3148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: FMOD/FrancisCargot/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637193002851795009
+  lastModified: 637193583481956775
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -3152,7 +3204,7 @@ MonoBehaviour:
   Path: event:/3_Animation/cigarette_ember
   guid: a3c2ccc434daf8408497afc2000ba53a
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -3192,7 +3244,7 @@ MonoBehaviour:
   Path: snapshot:/Tunnel
   guid: 9f588d3e6ede5b459ee4b77311520ebb
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -3233,7 +3285,7 @@ MonoBehaviour:
   Path: event:/3_Animation/butterfly_fly
   guid: 04e1642d2d598244b277850a72de9d59
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3290,7 +3342,7 @@ MonoBehaviour:
   Path: event:/2_Trigger/crow_push
   guid: 32e3907ed5fa9543b73ed14dac60a75b
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3382,7 +3434,7 @@ MonoBehaviour:
   Path: event:/3_Animation/spider_step
   guid: eb6e42856b674543a9174146719fe74f
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -3405,7 +3457,7 @@ MonoBehaviour:
   Path: event:/8_Snapshot/Normal
   guid: d2b436ccf6bd00419718d0f4dd518e6f
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3428,7 +3480,7 @@ MonoBehaviour:
   Path: event:/2_Trigger/cigarette_falling
   guid: f9a71b9ddc78e14e9f9634b6c4d01da6
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3504,7 +3556,7 @@ MonoBehaviour:
   Path: snapshot:/Normal
   guid: 892f9a8af50f7a41af83e00807fbb8b5
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -3655,7 +3707,7 @@ MonoBehaviour:
   Path: event:/3_Animation/snail_movement
   guid: 38afc55dba19a84e9afc89c9901c48bf
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -3695,7 +3747,7 @@ MonoBehaviour:
   Path: event:/8_Snapshot/OnShell
   guid: 10fdf43a99734d4cbbe3fb6af959d090
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3787,7 +3839,7 @@ MonoBehaviour:
   Path: event:/2_Trigger/cigarette_impact_falling
   guid: 172a620090419a46a8407ee0349b4e71
   Banks:
-  - {fileID: 4637720650504077008}
+  - {fileID: 4733105929595195748}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
