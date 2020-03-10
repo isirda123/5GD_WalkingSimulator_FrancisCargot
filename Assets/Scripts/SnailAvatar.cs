@@ -24,6 +24,7 @@ public class SnailAvatar : MonoBehaviour
 
     [SerializeField] Rigidbody rb;
     [SerializeField] Transform downRaycast;
+    [SerializeField] Transform rayCast;
     [SerializeField] float powerOfGravity;
     [SerializeField] float speedOfGravityOrientation;
     [SerializeField] float speedOfSnail;
@@ -87,7 +88,7 @@ public class SnailAvatar : MonoBehaviour
         if (modeSlide == true)
         {
             rb.AddForce(Physics.gravity * speedOfSlide);
-            rb.AddForce(gravityToGive);
+            rb.AddForce(gravityToGive*0.1f);
         }
         else
         {
@@ -116,10 +117,10 @@ public class SnailAvatar : MonoBehaviour
     {
         RaycastHit hit;
 
-        if (Physics.Raycast(transform.position, -transform.up, out hit, transform.localScale.y + 5f))
+        if (Physics.Raycast(rayCast.position, -transform.up, out hit, transform.localScale.y + 5f))
         {
 
-            Debug.DrawRay(transform.position, -transform.up * 0.75f, Color.yellow);
+            Debug.DrawRay(rayCast.position, -transform.up * 0.75f, Color.yellow);
 
 
             gravityOrientation = Vector3.Lerp(gravityOrientation, hit.normal,Time.deltaTime*speedOfGravityOrientation);
