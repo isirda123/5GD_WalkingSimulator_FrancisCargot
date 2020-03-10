@@ -6,13 +6,20 @@ public class SnailAvatar : MonoBehaviour
 {
     bool touchingTheFloor = false;
     bool inFakeRotation = false;
+    bool modeSlide = false;
 
     [SerializeField] Vector3 gravityOrientation;
     Vector3 gravityToGive = -Vector3.up * 9.81f;
 
     RaycastHit previousHit;
 
+    MeshCollider baseCollider;
+    BoxCollider slideCollider;
+    [SerializeField] PhysicMaterial normalMat;
+    [SerializeField] PhysicMaterial iceMat;
+
     float timerBetweenTwoNormal = 0;
+
 
 
     [SerializeField] Rigidbody rb;
@@ -23,31 +30,74 @@ public class SnailAvatar : MonoBehaviour
     [SerializeField] float speedOfSnailRotation;
     [SerializeField] float smoothingTimeBetweenNormals;
     [SerializeField] float fakeSpeed;
+    [SerializeField] float speedOfSlide;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        baseCollider = GetComponent<MeshCollider>();
+        slideCollider = GetComponent<BoxCollider>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            modeSlide = true;
+            ChangePhysicInteraction(modeSlide);
 
-        if (Input.GetKey(KeyCode.Z))
+        }
+
+        if(Input.GetKeyUp(KeyCode.Space))
+        {
+            modeSlide = false;
+            ChangePhysicInteraction(modeSlide);
+        }
+
+
+        if (Input.GetKey(KeyCode.Z) && modeSlide == false)
         {
             Moving();
         }
         CheckFloor();
         ChangeGravity();
+
+    }
+
+
+    void ChangePhysicInteraction(bool ice)
+    {
+        if (ice == true)
+        {
+            //baseCollider.enabled = false;
+            //slideCollider.enabled = true;
+            baseCollider.material = iceMat;
+        }
+        else
+        {
+            baseCollider.material = normalMat;
+            //baseCollider.enabled = true;
+            //slideCollider.enabled = false;
+        }
     }
 
     void ChangeGravity()
     {
-        if (inFakeRotation == false)
+        if (modeSlide == true)
         {
-            rb.AddForce(gravityToGive);
+            rb.AddForce(Physics.gravity * speedOfSlide);
         }
+        else
+        {
+            if (inFakeRotation == false)
+            {
+                rb.AddForce(gravityToGive);
+            }
+        }
+
+
+
         Debug.DrawLine(transform.position, transform.position + gravityToGive, Color.blue);
     }
 
