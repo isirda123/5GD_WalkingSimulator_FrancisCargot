@@ -28,7 +28,6 @@ public class SnailAvatar : MonoBehaviour
     [SerializeField] float speedOfGravityOrientation;
     [SerializeField] float speedOfSnail;
     [SerializeField] float speedOfSnailRotation;
-    [SerializeField] float smoothingTimeBetweenNormals;
     [SerializeField] float fakeSpeed;
     [SerializeField] float speedOfSlide;
 
@@ -53,6 +52,7 @@ public class SnailAvatar : MonoBehaviour
         {
             modeSlide = false;
             ChangePhysicInteraction(modeSlide);
+            rb.velocity = Vector3.zero;
         }
 
 
@@ -87,6 +87,7 @@ public class SnailAvatar : MonoBehaviour
         if (modeSlide == true)
         {
             rb.AddForce(Physics.gravity * speedOfSlide);
+            rb.AddForce(gravityToGive);
         }
         else
         {
@@ -115,20 +116,21 @@ public class SnailAvatar : MonoBehaviour
     {
         RaycastHit hit;
 
-        if (Physics.Raycast(transform.position, -transform.up, out hit, transform.localScale.y + 0.75f))
+        if (Physics.Raycast(transform.position, -transform.up, out hit, transform.localScale.y + 5f))
         {
 
             Debug.DrawRay(transform.position, -transform.up * 0.75f, Color.yellow);
 
 
-            gravityOrientation = Vector3.Lerp(gravityOrientation, hit.normal, Time.deltaTime*speedOfGravityOrientation);
+            gravityOrientation = Vector3.Lerp(gravityOrientation, hit.normal,Time.deltaTime*speedOfGravityOrientation);
+            print(Time.deltaTime * speedOfGravityOrientation);
+            //gravityOrientation = hit.normal;
             //gravityOrientation = hit.normal;
 
         }
         else
         {
-            print("lol1");
-            transform.Rotate(Vector3.right * Time.deltaTime * 10);
+            //transform.Rotate(Vector3.right * Time.deltaTime * 10);
             /*gravityOrientation = transform.up;
             print(transform.up);
             gravityToGive = -gravityOrientation * powerOfGravity;
@@ -136,6 +138,7 @@ public class SnailAvatar : MonoBehaviour
 
             if (Physics.Raycast(downRaycast.position, -downRaycast.up, out hit, 5f))
             {
+                print("lol1");
                 Debug.DrawRay(downRaycast.position, -downRaycast.up * 0.75f, Color.black);
                 /*if (Input.GetKey(KeyCode.Z) == false)
                 {
@@ -151,7 +154,7 @@ public class SnailAvatar : MonoBehaviour
 
         gravityToGive = -gravityOrientation * powerOfGravity;
 
-        print(gravityOrientation);
+
         touchingTheFloor = true;
     }
 
