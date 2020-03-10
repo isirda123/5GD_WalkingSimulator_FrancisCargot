@@ -78,6 +78,19 @@ MonoBehaviour:
   yRotationMax: 80
   rotX: 0
   rotY: 0
+--- !u!65 &187052262
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5031825721531772168}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.3826833, z: 2}
+  m_Center: {x: 0.000015258789, y: 0.16221173, z: 0.000030522413}
 --- !u!114 &1754213286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102,19 +115,6 @@ MonoBehaviour:
   speedOfSnailRotation: 100
   fakeSpeed: 100
   speedOfSlide: 0.05
---- !u!65 &187052262
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5031825721531772168}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 2, y: 1.3826833, z: 2}
-  m_Center: {x: 0.000015258789, y: 0.16221173, z: 0.000030522413}
 --- !u!1001 &2642760223257534447
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -258,7 +258,7 @@ PrefabInstance:
     - target: {fileID: 7023463393967157997, guid: 9e87b4b2304dd354bba21f81e8c66c8c,
         type: 3}
       propertyPath: m_CollisionDetection
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7023463393967157990, guid: 9e87b4b2304dd354bba21f81e8c66c8c, type: 3}
