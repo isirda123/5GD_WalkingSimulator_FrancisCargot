@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23b96d6ea5068704bbdd65d0b4e377aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impactsBeforeFreeze: 2
+  impactsBeforeFreeze: 8
 --- !u!114 &1701941367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,7 +220,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5825750446735494826}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 45b09a7122f71a9458e89966c5d94a0c, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
